@@ -1,6 +1,6 @@
-import dijkstra
-import floyd_warshall
-import bellman_ford
+from algorythms import bellman_ford as bf
+from algorythms import floyd_warshall as fw
+from algorythms import dijkstra as di
 
 i = float('inf')
 
@@ -22,6 +22,6 @@ g2 = [[0, 1, i, i, i, i, i, i, i],
       [i, i, i, i, i, 1, i, i, 0]]
 
 
-print(dijkstra.find(g1))
-print(floyd_warshall.find(g1))
-print(bellman_ford.find(g1))
+print(di.find(g2))
+print(fw.find(g2))
+print(bf.find(g2))

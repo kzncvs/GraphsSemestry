@@ -1,4 +1,5 @@
-import centers
+import dijkstra
+import bellman_ford
 
 i = float('inf')
 
@@ -20,5 +21,5 @@ g2 = [[0, 1, i, i, i, i, i, i, i],
       [i, i, i, i, i, 1, i, i, 0]]
 
 
-# print(centers.find_eccentricity(g2))
-print(centers.find(g1))
+print(dijkstra.find(g2))
+print(bellman_ford.find(g2))

@@ -20,6 +20,5 @@ g2 = [[0, 1, i, i, i, i, i, i, i],
       [i, i, i, i, i, i, 1, 1, i],
       [i, i, i, i, i, 1, i, i, 0]]
 
-
 print(dijkstra.find(g2))
 print(bellman_ford.find(g2))
